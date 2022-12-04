@@ -1,5 +1,9 @@
 require("plugins")
 
+-- settings 
+vim.opt.nu = true
+vim.opt.rnu = true
+
 -- lsp-zero
 local lsp = require("lsp-zero")
 
