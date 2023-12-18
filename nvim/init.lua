@@ -3,12 +3,18 @@ require("plugins")
 -- settings 
 vim.opt.nu = true
 vim.opt.rnu = true
+vim.opt.tabstop = 4
+vim.opt.shiftwidth = 4
 
 -- lsp-zero
 local lsp = require("lsp-zero")
 
 lsp.preset("recommended")
 lsp.setup()
+
+vim.diagnostic.config({
+	virtual_text = true,
+})
 
 -- theme
 vim.cmd([[colorscheme gruvbox]])
