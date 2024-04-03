@@ -27,7 +27,7 @@ return require("packer").startup(function(use)
   use "tpope/vim-fugitive"
 
   use {
-    'nvim-telescope/telescope.nvim', tag = '0.1.0',
+    'nvim-telescope/telescope.nvim', tag = '0.1.4',
     requires = { {'nvim-lua/plenary.nvim'} }
   }
   use 'windwp/nvim-autopairs'
