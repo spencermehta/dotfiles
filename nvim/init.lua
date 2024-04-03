@@ -35,3 +35,9 @@ vim.keymap.set("n", "<leader>gpsu", "<CMD>G push --set-upstream origin HEAD<CR>"
 vim.keymap.set('n', '<leader>.', function() vim.lsp.buf.code_action() end, bufopts)
 
 
+local lspconfig = require('lspconfig')
+lsp.format_on_save({
+	servers = {
+		['rust_analyzer'] = {'rust'}
+	}
+})
