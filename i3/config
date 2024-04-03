@@ -181,7 +181,9 @@ bar {
 }
 
 bindsym $mod+p move workspace to output right
-bindsym $mod+shift+x exec i3lock --color=000000
+bindsym $mod+Shift+x exec i3lock --color=000000
+bindsym $mod+Shift+s exec systemctl suspend
+
 exec "setxkbmap -layout gb"
 # exec "setxkbmap -layout gb -variant mac"
 exec "xrandr --output DVI-D-0 --mode 1920x1080 --rate 144 --left-of DP-4"
