@@ -33,6 +33,7 @@ vim.keymap.set("n", "<leader>gp", "<CMD>G push<CR>", {})
 vim.keymap.set("n", "<leader>gpsu", "<CMD>G push --set-upstream origin HEAD<CR>", {})
 -- lsp
 vim.keymap.set('n', '<leader>.', function() vim.lsp.buf.code_action() end, bufopts)
+vim.keymap.set('n', '<leader>r', function() vim.lsp.buf.rename() end, bufopts)
 
 require("mason").setup()
 
