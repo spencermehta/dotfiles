@@ -34,6 +34,7 @@ vim.keymap.set("n", "<leader>gpsu", "<CMD>G push --set-upstream origin HEAD<CR>"
 -- lsp
 vim.keymap.set('n', '<leader>.', function() vim.lsp.buf.code_action() end, bufopts)
 
+require("mason").setup()
 
 local lspconfig = require('lspconfig')
 lsp.format_on_save({
@@ -41,3 +42,5 @@ lsp.format_on_save({
 		['rust_analyzer'] = {'rust'}
 	}
 })
+
+require('lspconfig').rust_analyzer.setup({})
