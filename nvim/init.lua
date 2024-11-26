@@ -45,3 +45,15 @@ lsp.format_on_save({
 })
 
 require('lspconfig').rust_analyzer.setup({})
+
+require('lspconfig').jdtls.setup({
+	settings = {
+		java = {
+			project = {
+				resourceFilters = {""}
+			}
+		}
+	}
+})
+
+require('lspconfig').pyright.setup({})
